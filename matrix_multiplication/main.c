@@ -103,7 +103,7 @@ int main(){
         // receive results
         printf("Enter receive\n");
         int *C_ptr = C;
-        for (int i = 0; i < num_jobs*(num_jobs); i++){
+        for (int i = 1; i < size; i++){
             MPI_Recv(C_ptr, N*num_jobs, MPI_INT, i, 2, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             C_ptr += num_jobs * N;
         }

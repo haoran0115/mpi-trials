@@ -1,0 +1,25 @@
+make
+make[1]: Entering directory '/home/shiroha/Documents/clang/mpi_tutorial/pingpong'
+/home/shiroha/mpich/mpich-4.0.2/bin/mpicc -o main main.c
+make[1]: Leaving directory '/home/shiroha/Documents/clang/mpi_tutorial/pingpong'
+/home/shiroha/mpich/mpich-4.0.2/bin/mpirun -np 2 ./main
+Rank 0 send count  1
+Rank 0 recv count  2
+Rank 0 send count  3
+Rank 1 recv count  1
+Rank 1 send count  2
+Rank 1 recv count  3
+Rank 1 send count  4
+Rank 1 recv count  5
+Rank 1 send count  6
+Rank 1 recv count  7
+Rank 1 send count  8
+Rank 1 recv count  9
+Rank 1 send count 10
+Rank 0 recv count  4
+Rank 0 send count  5
+Rank 0 recv count  6
+Rank 0 send count  7
+Rank 0 recv count  8
+Rank 0 send count  9
+Rank 0 recv count 10
